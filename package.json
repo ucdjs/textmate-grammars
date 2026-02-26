@@ -1,7 +1,6 @@
 {
   "name": "@ucdjs/textmate-grammars",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.30.3",
   "description": "Collection of TextMate grammars for UCDJS projects.",
   "keywords": [
     "textmate"
@@ -42,5 +41,6 @@
   "devDependencies": {
     "oxfmt": "^0.35.0",
     "oxlint": "^1.50.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.3"
 }
