@@ -1,0 +1,45 @@
+{
+  "name": "@ucdjs/textmate-grammars",
+  "version": "0.0.0",
+  "description": "Collection of TextMate grammars for UCDJS projects.",
+  "keywords": [
+    "textmate"
+  ],
+  "homepage": "https://github.com/ucdjs/textmate-grammars#readme",
+  "bugs": "https://github.com/ucdjs/textmate-grammars/issues",
+  "license": "MIT",
+  "author": "Lucas Nørgård <lucasnrgaard@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucdjs/textmate-grammars.git"
+  },
+  "funding": "https://github.com/sponsors/luxass",
+  "files": [
+    "*.d.ts",
+    "*.js",
+    "LICENSE",
+    "grammars"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./grammars/*": "./grammars/*"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0"
+  }
+}
