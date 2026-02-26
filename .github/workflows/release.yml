@@ -36,9 +36,6 @@ jobs:
       - name: install dependencies
         run: pnpm install
 
-      - name: build
-        run: pnpm run build
-
       - name: detect tag
         id: tag
         run: |
